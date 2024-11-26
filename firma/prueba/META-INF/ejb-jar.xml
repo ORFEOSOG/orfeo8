@@ -1,0 +1,27 @@
+<?xml version = '1.0' encoding = 'ISO-8859-15'?>
+<!DOCTYPE ejb-jar PUBLIC "-//Sun Microsystems, Inc.//DTD Enterprise JavaBeans 2.0//EN" "http://java.sun.com/dtd/ejb-jar_2_0.dtd">
+<ejb-jar>
+  <enterprise-beans>
+    <session>
+      <description>Session Bean ( Stateless )</description>
+      <display-name>FirmanteEJB1</display-name>
+      <ejb-name>FirmanteEJB1</ejb-name>
+      <home>pk.FirmanteEJB1Home</home>
+      <remote>pk.FirmanteEJB1</remote>
+      <local-home>pk.FirmanteEJB1LocalHome</local-home>
+      <local>pk.FirmanteEJB1Local</local>
+      <ejb-class>pk.FirmanteEJB1Bean</ejb-class>
+      <session-type>Stateless</session-type>
+      <transaction-type>Container</transaction-type>
+    </session>
+  </enterprise-beans>
+  <assembly-descriptor>
+    <container-transaction>
+      <method>
+        <ejb-name>FirmanteEJB1</ejb-name>
+        <method-name>*</method-name>
+      </method>
+      <trans-attribute>Required</trans-attribute>
+    </container-transaction>
+  </assembly-descriptor>
+</ejb-jar>
